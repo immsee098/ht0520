@@ -3,17 +3,16 @@
     background-size: 300px 562px;
 }
 
-#div2, #div1 {
+#div2, #div1, #div3 {
     display: inline-block;
     width: 300px;
     height: 562px;
     border: 1px solid gold
-
   }
 
 
 
-  img{
+img{
       width: 300px;
       height: 562px;
       display: inline-block;
