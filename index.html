@@ -9,6 +9,9 @@
 </head>
 
 <body>
+    
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">사용설명서</button>
     <div class="container">
         <div id="example" ondrop="drop(event)" ondragover="allowDrop(event)" class="box1">
                   <img id="drag1" src="css/02set0.png"  draggable="true" ondragstart="drag(event)" />
@@ -45,6 +48,31 @@
     </div>
     <img onclick='sample();' class='capBtn' src="/css/banner.png"></img>
 
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>@@옷 입히기 게임 사용 설명서@@</h2>
+    </div>
+    <div class="modal-body">
+        <p>1. 오른쪽 상자의 의상 박스에서 <b>옷을 마우스로 드래그 하여 왼쪽 사람 박스로 가져가주세요.</b></p>
+        <p>2. 박스 위에 <b>드래그한 옷을 놓으면</b> 예쁘게 세트로 입혀집니다.</p>
+        <p>3. 의상 박스 아래 <b>< ></b> 버튼을 통해 다양한 의상을 바꿔 입힐 수 있습니다. (현재 세트 의상: 5개)</p>
+        <p>4. 이미 옷을 입혔어도 편하게 갈아 입힐 수 있습니다. 새로운 옷을 드래그 해서 사람 위에 올려주세요. 이미 입고 있던 옷은 스스로 의상 상자 안에 잘 정리됩니다.</p>
+        <p>5. 마음에 드는 옷을 입혔다면 <b>아래 capture 배너를 눌러서 기록해봅시다.</b> PNG 이미지로 기록이 가능합니다.</p>
+        <p>6. 현재 안내창을 끄려면 안내창이 아닌 다른 배경을 눌러주세요. 위의 X를 누려서도 무방합니다.</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
+  </div>
+
+</div>
+
+
 
     <script src="act.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -55,29 +83,3 @@
 </body>
 </html>
 
-
-<!-- <div id="example" ondrop="drop(event)" ondragover="allowDrop(event)" class="box1">
-        <img id="drag1" src="css/02set0.png"  draggable="true" ondragstart="drag(event)" />
-    </div>
-
-    <button onclick='sample();'>캡처</button>
-
-    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <img id="drag2" src="css/02set1.png"  draggable="true" ondragstart="drag(event)" />
-    </div>
-    
-    <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <img id="drag3" src="css/02set2.png"  draggable="true" ondragstart="drag(event)" />
-    </div>
-    
-    <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <img id="drag4" src="css/02set3.png"  draggable="true" ondragstart="drag(event)" />
-    </div>
-    
-    <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <img id="drag5" src="css/02set4.png"  draggable="true" ondragstart="drag(event)" />
-    </div>
-    
-    <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <img id="drag6" src="css/02set5.png"  draggable="true" ondragstart="drag(event)" />
-    </div> -->
