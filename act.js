@@ -1,3 +1,10 @@
+import html2canvas from 'html2canvas';
+
+$add.onclick
+
+html2canvas(document.querySelector("#capture")).then(canvas => {
+  document.body.appendChild(canvas)
+});
 
 function allowDrop(ev) {
   ev.preventDefault();
