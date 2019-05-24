@@ -1,7 +1,9 @@
 function sample() {
+  event.preventDefault();
   var background = document.getElementById('example').style.background;
       
   html2canvas(document.getElementById('example'), {
+    
       useCORS: true, // 다른사이트의리소스가있을때활성화(그러나...Access-Control-Allow-Origin 필요)
       onrendered: function(canvas) {
           canvas.toBlob(function(blob) {
