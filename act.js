@@ -30,6 +30,9 @@ function drop(ev) {
   srcParent.appendChild(tgt);
 }
 
+
+//캐러셀 구현
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
